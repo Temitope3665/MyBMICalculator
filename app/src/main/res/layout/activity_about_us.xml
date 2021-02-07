@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:padding="16dp"
+    tools:context=".AboutUs">
+
+    <ImageView
+        android:id="@+id/backOption"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/ic_back" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp">
+
+        <TextView
+            android:id="@+id/textStory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/this_app_is_developed_majorly_to_help_you_in_your_every_day_activity_research_over_93_live_a_life_without_bothering_to_check_if_its_a_balanced_life_or_not_with_the_help_of_this_mobile_app_you_can_now_perform_some_exercises_by_timing_yourself_moreso_it_gives_you_the_opportunity_to_check_you_diet_and_weight_being_lost_i_recommend_you_using_this_app_daily_and_sharing_it_among_your_friends_thanks_for_downloading"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp">
+
+        <TextView
+            android:id="@+id/developerName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/developer_temitope_aroyewon"
+            android:textSize="17sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp">
+
+        <TextView
+            android:id="@+id/contactMe"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/contact"
+            android:textSize="17sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:layout_marginTop="20dp"
+        app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/gmail"
+            android:contextClickable="true"
+            android:contentDescription="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/gmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aroyewontope@gmail.com"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

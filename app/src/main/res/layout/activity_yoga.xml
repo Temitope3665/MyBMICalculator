@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YogaActivity">
+
+    <TextView
+        android:id="@+id/textYogaCollection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/yoga_collections"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="@id/textYogaCollection"
+        app:layout_constraintBottom_toBottomOf="@id/textYogaCollection">
+
+
+        <TextView
+            android:id="@+id/goHomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@id/textYogaCollection"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:id="@+id/scrollLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/collection_layout1" />
+
+            <include layout="@layout/collection_layout2" />
+
+            <include layout="@layout/collection_layout4" />
+
+            <include layout="@layout/collection_layout5" />
+
+            <include layout="@layout/collection_layout6" />
+
+            <include layout="@layout/collection_layout7" />
+
+            <include layout="@layout/collection_layout10"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textYogaPictures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/yoga_activities"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontalScrollView" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textYogaPictures"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:columnCount="2"
+            app:useDefaultMargins="true">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:src="@drawable/yogaclass"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="10dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/clifbooth"
+                app:riv_corner_radius="10dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/newcotton"
+                app:riv_corner_radius="10dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/newne"
+                app:riv_corner_radius="10dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/newimage"
+                app:riv_corner_radius="10dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/newyogamat"
+                app:riv_corner_radius="10dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/newtwin"
+                app:riv_corner_radius="10dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/newcottonbro"
+                app:riv_corner_radius="10dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/newcottonbroimg"
+                app:riv_corner_radius="10dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/newellyfolks"
+                app:riv_corner_radius="10dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorWhite"
+        android:visibility="invisible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textStory"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="@string/this_app_is_developed_majorly_to_help_you_in_your_every_day_activity_research_over_93_live_a_life_without_bothering_to_check_if_its_a_balanced_life_or_not_with_the_help_of_this_mobile_app_you_can_now_perform_some_exercises_by_timing_yourself_moreso_it_gives_you_the_opportunity_to_check_you_diet_and_weight_being_lost_i_recommend_you_using_this_app_daily_and_sharing_it_among_your_friends_thanks_for_downloading"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"/>
+    
+   <TextView
+       android:id="@+id/developerName"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:text="@string/developer_temitope_aroyewon"
+       android:textSize="17sp"
+       android:textStyle="bold"
+       android:textColor="@color/colorBlack"
+       android:layout_marginTop="10dp"
+       android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/contactMe"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/contact"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="@string/app_name"
+            android:contextClickable="true"
+            android:src="@drawable/twitter"/>
+
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/instagram"
+            android:contextClickable="true"
+            android:contentDescription="@string/app_name"/>
+
+    </LinearLayout>
+    
+    
+
+</LinearLayout>
